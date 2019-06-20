@@ -1,12 +1,66 @@
-body{
+body {
     background: rgb(50, 150, 184)
 }
 
-.headerT{
+.headerT {
     font-size: 2rem;
 }
 
-.vs{
+.vs {
     padding: 5px;
     border: 2px solid black;
 }
+
+
+
+
+button {
+    margin-top: 10px;
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1em;
+    padding: 0 2rem;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+button:hover {
+    background: #fff;
+    color: #1AAB8A;
+}
+
+button:before,
+button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #1AAB8A;
+    transition: 400ms ease all;
+}
+
+button:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+button:hover:before,
+button:hover:after {
+    width: 50%;
+    transition: 800ms ease all;
+}
+
+button:active {
+    top: 0px;
+    bottom: -1px;
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
+    background: rgba( 20, 224, 133, 1 );
+  }
