@@ -1,0 +1,12 @@
+body{
+    background: rgb(50, 150, 184)
+}
+
+.headerT{
+    font-size: 2rem;
+}
+
+.vs{
+    padding: 5px;
+    border: 2px solid black;
+}
